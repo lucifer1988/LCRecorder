@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6B1990B18E1881900AB10E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B1990A18E1881900AB10E1 /* Foundation.framework */; };
+		D6B1990D18E1881900AB10E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B1990C18E1881900AB10E1 /* CoreGraphics.framework */; };
+		D6B1990F18E1881900AB10E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B1990E18E1881900AB10E1 /* UIKit.framework */; };
+		D6B1991518E1881900AB10E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6B1991318E1881900AB10E1 /* InfoPlist.strings */; };
+		D6B1991718E1881900AB10E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B1991618E1881900AB10E1 /* main.m */; };
+		D6B1991B18E1881900AB10E1 /* LCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B1991A18E1881900AB10E1 /* LCAppDelegate.m */; };
+		D6B1991E18E1881900AB10E1 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B1991C18E1881900AB10E1 /* Main_iPhone.storyboard */; };
+		D6B1992118E1881900AB10E1 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6B1991F18E1881900AB10E1 /* Main_iPad.storyboard */; };
+		D6B1992418E1881900AB10E1 /* LCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B1992318E1881900AB10E1 /* LCViewController.m */; };
+		D6B1992618E1881900AB10E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6B1992518E1881900AB10E1 /* Images.xcassets */; };
+		D6B1992D18E1881900AB10E1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B1992C18E1881900AB10E1 /* XCTest.framework */; };
+		D6B1992E18E1881900AB10E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B1990A18E1881900AB10E1 /* Foundation.framework */; };
+		D6B1992F18E1881900AB10E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B1990E18E1881900AB10E1 /* UIKit.framework */; };
+		D6B1993718E1881900AB10E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6B1993518E1881900AB10E1 /* InfoPlist.strings */; };
+		D6B1993918E1881900AB10E1 /* LCRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B1993818E1881900AB10E1 /* LCRecorderTests.m */; };
+		D6B1994518E1885600AB10E1 /* LCRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B1994418E1885600AB10E1 /* LCRecorder.m */; };
+		D6B1994818E1888700AB10E1 /* LCRecordHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B1994718E1888700AB10E1 /* LCRecordHUD.m */; };
+		D6B1995418E2AC5500AB10E1 /* RecordCancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1994A18E2AC5500AB10E1 /* RecordCancel@2x.png */; };
+		D6B1995518E2AC5500AB10E1 /* RecordingBkg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1994B18E2AC5500AB10E1 /* RecordingBkg@2x.png */; };
+		D6B1995618E2AC5500AB10E1 /* RecordingSignal001@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1994C18E2AC5500AB10E1 /* RecordingSignal001@2x.png */; };
+		D6B1995718E2AC5500AB10E1 /* RecordingSignal002@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1994D18E2AC5500AB10E1 /* RecordingSignal002@2x.png */; };
+		D6B1995818E2AC5500AB10E1 /* RecordingSignal003@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1994E18E2AC5500AB10E1 /* RecordingSignal003@2x.png */; };
+		D6B1995918E2AC5500AB10E1 /* RecordingSignal004@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1994F18E2AC5500AB10E1 /* RecordingSignal004@2x.png */; };
+		D6B1995A18E2AC5500AB10E1 /* RecordingSignal005@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1995018E2AC5500AB10E1 /* RecordingSignal005@2x.png */; };
+		D6B1995B18E2AC5500AB10E1 /* RecordingSignal006@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1995118E2AC5500AB10E1 /* RecordingSignal006@2x.png */; };
+		D6B1995C18E2AC5500AB10E1 /* RecordingSignal007@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1995218E2AC5500AB10E1 /* RecordingSignal007@2x.png */; };
+		D6B1995D18E2AC5500AB10E1 /* RecordingSignal008@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1995318E2AC5500AB10E1 /* RecordingSignal008@2x.png */; };
+		D6B1995F18E2B27200AB10E1 /* MessageTooShort@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B1995E18E2B27200AB10E1 /* MessageTooShort@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6B1993018E1881900AB10E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B198FF18E1881900AB10E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6B1990618E1881900AB10E1;
+			remoteInfo = LCRecorder;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D6B1990718E1881900AB10E1 /* LCRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B1990A18E1881900AB10E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6B1990C18E1881900AB10E1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D6B1990E18E1881900AB10E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D6B1991218E1881900AB10E1 /* LCRecorder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LCRecorder-Info.plist"; sourceTree = "<group>"; };
+		D6B1991418E1881900AB10E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6B1991618E1881900AB10E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6B1991818E1881900AB10E1 /* LCRecorder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LCRecorder-Prefix.pch"; sourceTree = "<group>"; };
+		D6B1991918E1881900AB10E1 /* LCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCAppDelegate.h; sourceTree = "<group>"; };
+		D6B1991A18E1881900AB10E1 /* LCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCAppDelegate.m; sourceTree = "<group>"; };
+		D6B1991D18E1881900AB10E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		D6B1992018E1881900AB10E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		D6B1992218E1881900AB10E1 /* LCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCViewController.h; sourceTree = "<group>"; };
+		D6B1992318E1881900AB10E1 /* LCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCViewController.m; sourceTree = "<group>"; };
+		D6B1992518E1881900AB10E1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D6B1992B18E1881900AB10E1 /* LCRecorderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCRecorderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B1992C18E1881900AB10E1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D6B1993418E1881900AB10E1 /* LCRecorderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LCRecorderTests-Info.plist"; sourceTree = "<group>"; };
+		D6B1993618E1881900AB10E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6B1993818E1881900AB10E1 /* LCRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCRecorderTests.m; sourceTree = "<group>"; };
+		D6B1994318E1885600AB10E1 /* LCRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRecorder.h; sourceTree = "<group>"; };
+		D6B1994418E1885600AB10E1 /* LCRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRecorder.m; sourceTree = "<group>"; };
+		D6B1994618E1888700AB10E1 /* LCRecordHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCRecordHUD.h; sourceTree = "<group>"; };
+		D6B1994718E1888700AB10E1 /* LCRecordHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCRecordHUD.m; sourceTree = "<group>"; };
+		D6B1994A18E2AC5500AB10E1 /* RecordCancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordCancel@2x.png"; sourceTree = "<group>"; };
+		D6B1994B18E2AC5500AB10E1 /* RecordingBkg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingBkg@2x.png"; sourceTree = "<group>"; };
+		D6B1994C18E2AC5500AB10E1 /* RecordingSignal001@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal001@2x.png"; sourceTree = "<group>"; };
+		D6B1994D18E2AC5500AB10E1 /* RecordingSignal002@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal002@2x.png"; sourceTree = "<group>"; };
+		D6B1994E18E2AC5500AB10E1 /* RecordingSignal003@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal003@2x.png"; sourceTree = "<group>"; };
+		D6B1994F18E2AC5500AB10E1 /* RecordingSignal004@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal004@2x.png"; sourceTree = "<group>"; };
+		D6B1995018E2AC5500AB10E1 /* RecordingSignal005@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal005@2x.png"; sourceTree = "<group>"; };
+		D6B1995118E2AC5500AB10E1 /* RecordingSignal006@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal006@2x.png"; sourceTree = "<group>"; };
+		D6B1995218E2AC5500AB10E1 /* RecordingSignal007@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal007@2x.png"; sourceTree = "<group>"; };
+		D6B1995318E2AC5500AB10E1 /* RecordingSignal008@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RecordingSignal008@2x.png"; sourceTree = "<group>"; };
+		D6B1995E18E2B27200AB10E1 /* MessageTooShort@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MessageTooShort@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6B1990418E1881900AB10E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B1990D18E1881900AB10E1 /* CoreGraphics.framework in Frameworks */,
+				D6B1990F18E1881900AB10E1 /* UIKit.framework in Frameworks */,
+				D6B1990B18E1881900AB10E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B1992818E1881900AB10E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B1992D18E1881900AB10E1 /* XCTest.framework in Frameworks */,
+				D6B1992F18E1881900AB10E1 /* UIKit.framework in Frameworks */,
+				D6B1992E18E1881900AB10E1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6B198FE18E1881900AB10E1 = {
+			isa = PBXGroup;
+			children = (
+				D6B1991018E1881900AB10E1 /* LCRecorder */,
+				D6B1993218E1881900AB10E1 /* LCRecorderTests */,
+				D6B1990918E1881900AB10E1 /* Frameworks */,
+				D6B1990818E1881900AB10E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6B1990818E1881900AB10E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1990718E1881900AB10E1 /* LCRecorder.app */,
+				D6B1992B18E1881900AB10E1 /* LCRecorderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6B1990918E1881900AB10E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1990A18E1881900AB10E1 /* Foundation.framework */,
+				D6B1990C18E1881900AB10E1 /* CoreGraphics.framework */,
+				D6B1990E18E1881900AB10E1 /* UIKit.framework */,
+				D6B1992C18E1881900AB10E1 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6B1991018E1881900AB10E1 /* LCRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1994918E2AC5500AB10E1 /* img */,
+				D6B1994218E1883F00AB10E1 /* SourceCode */,
+				D6B1991918E1881900AB10E1 /* LCAppDelegate.h */,
+				D6B1991A18E1881900AB10E1 /* LCAppDelegate.m */,
+				D6B1991C18E1881900AB10E1 /* Main_iPhone.storyboard */,
+				D6B1991F18E1881900AB10E1 /* Main_iPad.storyboard */,
+				D6B1992218E1881900AB10E1 /* LCViewController.h */,
+				D6B1992318E1881900AB10E1 /* LCViewController.m */,
+				D6B1992518E1881900AB10E1 /* Images.xcassets */,
+				D6B1991118E1881900AB10E1 /* Supporting Files */,
+			);
+			path = LCRecorder;
+			sourceTree = "<group>";
+		};
+		D6B1991118E1881900AB10E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1991218E1881900AB10E1 /* LCRecorder-Info.plist */,
+				D6B1991318E1881900AB10E1 /* InfoPlist.strings */,
+				D6B1991618E1881900AB10E1 /* main.m */,
+				D6B1991818E1881900AB10E1 /* LCRecorder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6B1993218E1881900AB10E1 /* LCRecorderTests */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1993818E1881900AB10E1 /* LCRecorderTests.m */,
+				D6B1993318E1881900AB10E1 /* Supporting Files */,
+			);
+			path = LCRecorderTests;
+			sourceTree = "<group>";
+		};
+		D6B1993318E1881900AB10E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1993418E1881900AB10E1 /* LCRecorderTests-Info.plist */,
+				D6B1993518E1881900AB10E1 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6B1994218E1883F00AB10E1 /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1994318E1885600AB10E1 /* LCRecorder.h */,
+				D6B1994418E1885600AB10E1 /* LCRecorder.m */,
+				D6B1994618E1888700AB10E1 /* LCRecordHUD.h */,
+				D6B1994718E1888700AB10E1 /* LCRecordHUD.m */,
+			);
+			path = SourceCode;
+			sourceTree = "<group>";
+		};
+		D6B1994918E2AC5500AB10E1 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				D6B1995E18E2B27200AB10E1 /* MessageTooShort@2x.png */,
+				D6B1994A18E2AC5500AB10E1 /* RecordCancel@2x.png */,
+				D6B1994B18E2AC5500AB10E1 /* RecordingBkg@2x.png */,
+				D6B1994C18E2AC5500AB10E1 /* RecordingSignal001@2x.png */,
+				D6B1994D18E2AC5500AB10E1 /* RecordingSignal002@2x.png */,
+				D6B1994E18E2AC5500AB10E1 /* RecordingSignal003@2x.png */,
+				D6B1994F18E2AC5500AB10E1 /* RecordingSignal004@2x.png */,
+				D6B1995018E2AC5500AB10E1 /* RecordingSignal005@2x.png */,
+				D6B1995118E2AC5500AB10E1 /* RecordingSignal006@2x.png */,
+				D6B1995218E2AC5500AB10E1 /* RecordingSignal007@2x.png */,
+				D6B1995318E2AC5500AB10E1 /* RecordingSignal008@2x.png */,
+			);
+			name = img;
+			path = LCRecorder/img;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6B1990618E1881900AB10E1 /* LCRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B1993C18E1881900AB10E1 /* Build configuration list for PBXNativeTarget "LCRecorder" */;
+			buildPhases = (
+				D6B1990318E1881900AB10E1 /* Sources */,
+				D6B1990418E1881900AB10E1 /* Frameworks */,
+				D6B1990518E1881900AB10E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LCRecorder;
+			productName = LCRecorder;
+			productReference = D6B1990718E1881900AB10E1 /* LCRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6B1992A18E1881900AB10E1 /* LCRecorderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B1993F18E1881900AB10E1 /* Build configuration list for PBXNativeTarget "LCRecorderTests" */;
+			buildPhases = (
+				D6B1992718E1881900AB10E1 /* Sources */,
+				D6B1992818E1881900AB10E1 /* Frameworks */,
+				D6B1992918E1881900AB10E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6B1993118E1881900AB10E1 /* PBXTargetDependency */,
+			);
+			name = LCRecorderTests;
+			productName = LCRecorderTests;
+			productReference = D6B1992B18E1881900AB10E1 /* LCRecorderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6B198FF18E1881900AB10E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Lucifer;
+				TargetAttributes = {
+					D6B1992A18E1881900AB10E1 = {
+						TestTargetID = D6B1990618E1881900AB10E1;
+					};
+				};
+			};
+			buildConfigurationList = D6B1990218E1881900AB10E1 /* Build configuration list for PBXProject "LCRecorder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6B198FE18E1881900AB10E1;
+			productRefGroup = D6B1990818E1881900AB10E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6B1990618E1881900AB10E1 /* LCRecorder */,
+				D6B1992A18E1881900AB10E1 /* LCRecorderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6B1990518E1881900AB10E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B1995618E2AC5500AB10E1 /* RecordingSignal001@2x.png in Resources */,
+				D6B1995A18E2AC5500AB10E1 /* RecordingSignal005@2x.png in Resources */,
+				D6B1992118E1881900AB10E1 /* Main_iPad.storyboard in Resources */,
+				D6B1995F18E2B27200AB10E1 /* MessageTooShort@2x.png in Resources */,
+				D6B1995D18E2AC5500AB10E1 /* RecordingSignal008@2x.png in Resources */,
+				D6B1995B18E2AC5500AB10E1 /* RecordingSignal006@2x.png in Resources */,
+				D6B1995518E2AC5500AB10E1 /* RecordingBkg@2x.png in Resources */,
+				D6B1995718E2AC5500AB10E1 /* RecordingSignal002@2x.png in Resources */,
+				D6B1992618E1881900AB10E1 /* Images.xcassets in Resources */,
+				D6B1991E18E1881900AB10E1 /* Main_iPhone.storyboard in Resources */,
+				D6B1991518E1881900AB10E1 /* InfoPlist.strings in Resources */,
+				D6B1995918E2AC5500AB10E1 /* RecordingSignal004@2x.png in Resources */,
+				D6B1995818E2AC5500AB10E1 /* RecordingSignal003@2x.png in Resources */,
+				D6B1995418E2AC5500AB10E1 /* RecordCancel@2x.png in Resources */,
+				D6B1995C18E2AC5500AB10E1 /* RecordingSignal007@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B1992918E1881900AB10E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B1993718E1881900AB10E1 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6B1990318E1881900AB10E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B1994518E1885600AB10E1 /* LCRecorder.m in Sources */,
+				D6B1991718E1881900AB10E1 /* main.m in Sources */,
+				D6B1991B18E1881900AB10E1 /* LCAppDelegate.m in Sources */,
+				D6B1994818E1888700AB10E1 /* LCRecordHUD.m in Sources */,
+				D6B1992418E1881900AB10E1 /* LCViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B1992718E1881900AB10E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B1993918E1881900AB10E1 /* LCRecorderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6B1993118E1881900AB10E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6B1990618E1881900AB10E1 /* LCRecorder */;
+			targetProxy = D6B1993018E1881900AB10E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D6B1991318E1881900AB10E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B1991418E1881900AB10E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D6B1991C18E1881900AB10E1 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B1991D18E1881900AB10E1 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		D6B1991F18E1881900AB10E1 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B1992018E1881900AB10E1 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		D6B1993518E1881900AB10E1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B1993618E1881900AB10E1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6B1993A18E1881900AB10E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6B1993B18E1881900AB10E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6B1993D18E1881900AB10E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LCRecorder/LCRecorder-Prefix.pch";
+				INFOPLIST_FILE = "LCRecorder/LCRecorder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D6B1993E18E1881900AB10E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LCRecorder/LCRecorder-Prefix.pch";
+				INFOPLIST_FILE = "LCRecorder/LCRecorder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D6B1994018E1881900AB10E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LCRecorder.app/LCRecorder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LCRecorder/LCRecorder-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LCRecorderTests/LCRecorderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D6B1994118E1881900AB10E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LCRecorder.app/LCRecorder";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LCRecorder/LCRecorder-Prefix.pch";
+				INFOPLIST_FILE = "LCRecorderTests/LCRecorderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6B1990218E1881900AB10E1 /* Build configuration list for PBXProject "LCRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B1993A18E1881900AB10E1 /* Debug */,
+				D6B1993B18E1881900AB10E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B1993C18E1881900AB10E1 /* Build configuration list for PBXNativeTarget "LCRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B1993D18E1881900AB10E1 /* Debug */,
+				D6B1993E18E1881900AB10E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D6B1993F18E1881900AB10E1 /* Build configuration list for PBXNativeTarget "LCRecorderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B1994018E1881900AB10E1 /* Debug */,
+				D6B1994118E1881900AB10E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6B198FF18E1881900AB10E1 /* Project object */;
+}
