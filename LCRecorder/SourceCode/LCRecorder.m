@@ -27,8 +27,8 @@ static NSTimeInterval timeInterval = 0.05;
 {
     [self shutRecorder:NO];
     
-    _recordPath = recordPath;
     NSURL *recordURL = [NSURL fileURLWithPath:recordPath];
+    _recordPath = recordPath;
     NSDictionary *recordSettings =
     [[NSDictionary alloc] initWithObjectsAndKeys:
      [NSNumber numberWithFloat: 22050],               AVSampleRateKey,
@@ -38,6 +38,7 @@ static NSTimeInterval timeInterval = 0.05;
      [NSNumber numberWithInt: AVAudioQualityMax],     AVEncoderAudioQualityKey,
      nil];
     NSError *error = nil;
+    
     _recorder = [[AVAudioRecorder alloc] initWithURL:recordURL settings:recordSettings error:&error];
     _recorder.delegate = self;
     _recorder.meteringEnabled = YES;
@@ -47,7 +48,6 @@ static NSTimeInterval timeInterval = 0.05;
         
         _recordHUD = [[LCRecordHUD alloc] initWithFrame:_parentView.bounds];
         [_parentView addSubview:_recordHUD];
-        
         _meterTimer = [NSTimer scheduledTimerWithTimeInterval:timeInterval
                                                        target:self
                                                      selector:@selector(updateMeter)
@@ -62,7 +62,7 @@ static NSTimeInterval timeInterval = 0.05;
 {
     if (_recorder && _recorder.isRecording) {
         _recordedDuration = _recorder.currentTime;
-        if (_recordedDuration >= 3.0f) {
+        if (_recordedDuration >= 1.0f) {
             NSString *recordTime = [self convertTimeIntervalToStandardFormat:_recordedDuration];
             [_recorder stop];
             [self shutRecorder:NO];

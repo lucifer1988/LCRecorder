@@ -16,11 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SDn-dE-8l3">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDn-dE-8l3">
                                 <rect key="frame" x="0.0" y="524" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="e0w-ub-52e"/>
+                                </constraints>
                                 <items>
-                                    <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="BqP-tg-Hin"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="MqX-JB-Z6H"/>
                                     <barButtonItem style="plain" id="9q0-G9-rxT">
                                         <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OuG-yq-KRc">
@@ -41,12 +43,16 @@
                                         </button>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Iwr-Au-3jq"/>
-                                    <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="Mt8-mN-da6"/>
                                 </items>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SDn-dE-8l3" secondAttribute="bottom" id="Di9-Lh-Hib"/>
+                            <constraint firstItem="SDn-dE-8l3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ICt-3u-KjC"/>
+                            <constraint firstAttribute="trailing" secondItem="SDn-dE-8l3" secondAttribute="trailing" id="a3M-dm-Iai"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="recordBtn" destination="OuG-yq-KRc" id="7aD-zg-yes"/>

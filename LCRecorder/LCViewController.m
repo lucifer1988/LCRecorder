@@ -74,47 +74,6 @@
     _recordBtn.highlighted = YES;
 }
 
-
-//- (IBAction)handleGesture:(id)sender {
-//    UIPanGestureRecognizer *panGestureRecognizer = sender;
-//    switch (panGestureRecognizer.state) {
-//        case UIGestureRecognizerStateBegan:
-//        {
-//            [self startRecord];
-//            _recordBtn.highlighted = YES;
-//        }
-//            break;
-//        case UIGestureRecognizerStateChanged:
-//        {
-//            CGPoint gestureLocation = [panGestureRecognizer locationInView:_recordBtn];
-//            if (gestureLocation.y+20 < 0) {
-//                RecordStatus status = RecordStatusCancel;
-//                [[NSNotificationCenter defaultCenter] postNotificationName:RECORD_STATUS_NOTIFICATION object:@(status)];
-//            }
-//            else {
-//                RecordStatus status = RecordStatusNormal;
-//                [[NSNotificationCenter defaultCenter] postNotificationName:RECORD_STATUS_NOTIFICATION object:@(status)];
-//            }
-//        }
-//            break;
-//        case UIGestureRecognizerStateEnded:
-//        {
-//            CGPoint gestureLocation = [panGestureRecognizer locationInView:_recordBtn];
-//            if (gestureLocation.y+20 < 0) {
-//                [self cancelRecord];
-//            }
-//            else {
-//                [self stopRecord];
-//            }
-//            _recordBtn.highlighted = NO;
-//        }
-//            break;
-//            
-//        default:
-//            break;
-//    }
-//}
-
 - (NSString *)filePath
 {
     NSString *filePath = [[NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) objectAtIndex:0] stringByAppendingPathComponent:@"test.caf"];
